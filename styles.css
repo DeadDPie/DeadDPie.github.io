@@ -1,0 +1,35 @@
+.btn {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px 15px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(31, 30, 30);
+}
+
+.btn:hover {
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+
+.btn--red {
+    color: white;
+    background-color: #BC3324;
+}
+
+.btn--red:hover {
+    color: white;
+    background-color: #A51505;
+}
+
+.btn--black {
+    color: white;
+    background-color: #1F1E1E;
+}
+
+.btn--black:hover {
+    color: white;
+    background-color: #A51505;
+}
