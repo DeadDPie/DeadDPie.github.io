@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Название документа (страницы)</title>
-  </head>
-  <body>
-    <header><nav></nav></header>
-    <main>
-      <h1>Заголовок страницы</h1>
-      <p>Параграф текста</p>
-      <div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>LenniArt</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__container">
+        <a href="index.html" class="page-header__logo">
+            <img src="assets/icons/logo.svg" alt="logo" class="page-header__logo-icon">
+        </a>
+        <nav class="page-header__nav">
+            <a href="#" class="page-header__nav-link">Мероприятия</a>
+            <a href="#" class="page-header__nav-link">Блог</a>
+            <a href="#" class="page-header__nav-link">О нас</a>
+            <a href="#" class="page-header__nav-link">Контакты</a>
+        </nav>
+        <div class="page-header__right-block">
+            <a href="#" class="btn page-header__user-btn">
+                Войти
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<main class="main">
+    <button class="page-header__btn btn btn--red"></button>
+    <h1>Заголовок страницы</h1>
+    <p>Параграф текста</p>
+    <div>
         <p>я хочу</p>
-        <button>Провести мероприятие</button>
-        <button>Стать арендатором</button>
-      </div>
-      <section>about us</section>
-      <section>Мероприятия</section>
-      <section>блог</section>
-      <section>КОнтакты</section>
-    </main>
-    <footer></footer>
-  </body>
+        <button class="btn">Провести мероприятие</button>
+        <button class="btn">Стать арендатором</button>
+    </div>
+    <section>about us</section>
+    <section>Мероприятия</section>
+    <section>блог</section>
+    <section>КОнтакты</section>
+</main>
+<footer class="page-footer"></footer>
+</body>
 </html>
