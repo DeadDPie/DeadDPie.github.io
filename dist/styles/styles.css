@@ -32,7 +32,7 @@ body {
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
-  color: #1F1E1E;
+  color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -58,7 +58,7 @@ body {
           flex: 0 0 auto;
 }
 a {
-  color: #1F1E1E;
+  color: #1f1e1e;
   outline: none;
 }
 img {
@@ -74,7 +74,7 @@ textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-family: "Open Sans", sans-serif;
-  color: #1F1E1E;
+  color: #1f1e1e;
 }
 textarea {
   resize: none;
@@ -115,10 +115,10 @@ textarea:focus::placeholder {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 40px;
-  border: 1px solid #1F1E1E;
+  border: 1px solid #1f1e1e;
   background-color: transparent;
   outline: none;
-  color: #1F1E1E;
+  color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -131,25 +131,82 @@ textarea:focus::placeholder {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #1F1E1E;
+  background-color: #1f1e1e;
   color: #ffffff;
 }
 .btn--red {
   color: white;
-  background-color: #BC3324;
-  border-color: #BC3324;
+  background-color: #bc3324;
+  border-color: #bc3324;
 }
 .btn--red:hover {
   color: white;
-  background-color: #A51505;
+  background-color: #a51505;
 }
 .btn--black {
   color: white;
-  background-color: #1F1E1E;
+  background-color: #1f1e1e;
 }
 .btn--black:hover {
   color: white;
-  background-color: #A51505;
+  background-color: #a51505;
+}
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.field__input,
+.field__textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.375;
+}
+.field__input {
+  height: 55px;
+  padding: 0 20px;
+}
+.field__textarea {
+  height: 150px;
+  padding: 20px;
+}
+.field__title {
+  display: block;
+  margin: 0 0 10px;
+  color: #1f1e1e;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.field__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #1f1e1e;
+}
+.field__select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.375;
 }
 .event-card {
   display: -webkit-box;
@@ -168,12 +225,12 @@ textarea:focus::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  color: #1F1E1E;
+  color: #1f1e1e;
   text-decoration: none;
 }
 .event-card__link:hover .event-card__title {
-  color: #BC3324;
-  text-decoration-color: #BC3324;
+  color: #bc3324;
+  text-decoration-color: #bc3324;
 }
 .event-card__picture {
   display: block;
@@ -197,7 +254,7 @@ textarea:focus::placeholder {
 .event-card__title {
   margin: 0 0 15px;
   min-height: 66px;
-  color: #1F1E1E;
+  color: #1f1e1e;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -306,7 +363,7 @@ textarea:focus::placeholder {
 }
 .article-card__title-link {
   margin: auto 0 40px;
-  color: #1F1E1E;
+  color: #1f1e1e;
   text-decoration-color: transparent;
   -webkit-transition: color 0.2s, text-decoration-color 0.2s;
   transition: color 0.2s, text-decoration-color 0.2s;
@@ -349,7 +406,7 @@ textarea:focus::placeholder {
   width: 100%;
   max-width: 1254px;
   height: 1px;
-  background-color: #1F1E1E;
+  background-color: #1f1e1e;
   pointer-events: none;
 }
 .listing {
@@ -386,7 +443,7 @@ textarea:focus::placeholder {
   min-height: 52px;
   font-weight: 600;
   font-size: 16px;
-  color: #1F1E1E;
+  color: #1f1e1e;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -413,7 +470,7 @@ textarea:focus::placeholder {
   min-height: 62px;
   margin: 0 auto 150px;
   padding: 8px 45px;
-  background-color: #1F1E1E;
+  background-color: #1f1e1e;
   color: #ffffff;
   font-family: "Lora", serif;
   font-weight: 500;
@@ -536,4 +593,18 @@ textarea:focus::placeholder {
 }
 .home__listing {
   margin-bottom: 95px;
+}
+.is-hidden {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(100%) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
