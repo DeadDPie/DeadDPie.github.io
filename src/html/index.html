@@ -5,6 +5,7 @@
 		@@include('blocks/page-header.html')
 		<main class="main">
 			<div class="home">
+				@@include('blocks/about.html', { class: 'home__about' })
 				@@include('blocks/blog-listing.html', {"class": "home__listing"})
 			</div>
 		</main>
