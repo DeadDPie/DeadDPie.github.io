@@ -668,6 +668,124 @@ textarea:focus::placeholder {
 .event {
   padding: 40px 0 150px;
 }
+.event__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.event__header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 80px;
+}
+.event__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.event__info {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 13px 0;
+  font-family: "mak", serif;
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
+}
+.event__info::before,
+.event__info::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 140px;
+  max-width: 100%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#1c1b1b), color-stop(82.86%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(270deg, #1c1b1b 0%, rgba(255, 255, 255, 0) 82.86%);
+}
+.event__info::before {
+  top: 0;
+}
+.event__info::after {
+  bottom: 0;
+}
+.event__info:last-child {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+.event__info:last-child::before,
+.event__info:last-child::after {
+  left: 0;
+  right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1c1b1b), color-stop(82.86%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(90deg, #1c1b1b 0%, rgba(255, 255, 255, 0) 82.86%);
+}
+.event__time {
+  white-space: nowrap;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+}
+.event__time[datetime]::after {
+  content: attr(data-caption);
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.event__info-text {
+  display: inline;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.event__picture {
+  display: block;
+  width: 497px;
+  margin: 0 50px;
+}
+.event__image {
+  display: block;
+  width: 100%;
+}
+.event__content {
+  max-width: 830px;
+  margin-bottom: 80px;
+}
 .page-header {
   position: fixed;
   top: 0;
