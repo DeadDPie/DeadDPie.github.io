@@ -1,79 +1,90 @@
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+html,
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: @gray;
-  background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
-  background-position: 0 0, 0 0;
-  background-size: auto, 100% auto;
-  background-repeat: repeat, repeat-y;
-  color: @black;
-  font-family: @font1;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.375;
-  overflow-x: hidden;
-  padding-top: 147px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: @gray;
+	background-image: url(../assets/images/noise.png),
+		url(../assets/images/bg.png);
+	background-position:
+		0 0,
+		0 0;
+	background-size:
+		auto,
+		100% auto;
+	background-repeat: repeat, repeat-y;
+	color: @black;
+	font-family: @font1;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.375;
+	overflow-x: hidden;
+	padding-top: 147px;
+
+	@media @bw1660 {
+		padding-top: 111px;
+	}
+	@media @bw768 {
+		padding-top: 70px;
+	}
 }
 
 .home {
-  padding: 100px 0;
+	padding: 100px 0;
 
-  &__listing {
-    margin-bottom: 95px;
-  }
-
+	&__listing {
+		margin-bottom: 95px;
+	}
 }
 
 .main {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 .page-footer {
-  flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 a {
-  color: @black;
-  outline: none;
+	color: @black;
+	outline: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 input,
 select,
 textarea {
-  outline: none;
-  box-shadow: none;
-  font-family: @font1;
-  color: @black;
+	outline: none;
+	box-shadow: none;
+	font-family: @font1;
+	color: @black;
 }
 
 textarea {
-  resize: none;
+	resize: none;
 
-  &::placeholder {
-    color: @gray;
-  }
+	&::placeholder {
+		color: @gray;
+	}
 }
 
 input:focus,
 textarea:focus {
-  &::placeholder {
-    //box-shadow: 2px;
-    color: transparent;
-  }
-
+	&::placeholder {
+		//box-shadow: 2px;
+		color: transparent;
+	}
 }
