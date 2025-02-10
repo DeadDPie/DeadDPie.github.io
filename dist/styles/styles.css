@@ -1498,9 +1498,13 @@ textarea:focus::placeholder {
 .x-btn:hover {
   background-color: #a51505;
 }
+.x-btn:active {
+  background-color: #a51505;
+}
 .x-btn__icon {
   margin: auto;
   color: #ffffff;
+  pointer-events: none;
 }
 .table {
   width: 100%;
@@ -1989,6 +1993,14 @@ textarea:focus::placeholder {
       -ms-transform: translate(0px, -6px) rotate(-45deg);
           transform: translate(0px, -6px) rotate(-45deg);
 }
+.show-event-popup body {
+  overflow: hidden;
+}
+.show-event-popup #js-eventPP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media (max-width: 1659px) {
   body {
     padding-top: 111px;
@@ -2231,6 +2243,10 @@ textarea:focus::placeholder {
   }
   .page-header__nav-toggle {
     margin-left: 5px;
+  }
+  .x-btn {
+    width: 36px;
+    height: 36px;
   }
   .about__container {
     padding-left: 20px;
