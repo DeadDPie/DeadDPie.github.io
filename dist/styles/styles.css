@@ -1196,6 +1196,10 @@ textarea:focus::placeholder {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
 }
 .page-header__nav-toggle::before {
   top: 13px;
@@ -1973,6 +1977,18 @@ textarea:focus::placeholder {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+.show-nav .page-header__nav-toggle::before {
+  -webkit-transform: translate(0px, 6px) rotate(45deg);
+      -ms-transform: translate(0px, 6px) rotate(45deg);
+          transform: translate(0px, 6px) rotate(45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.show-nav .page-header__nav-toggle::after {
+  -webkit-transform: translate(0px, -6px) rotate(-45deg);
+      -ms-transform: translate(0px, -6px) rotate(-45deg);
+          transform: translate(0px, -6px) rotate(-45deg);
+}
 @media (max-width: 1659px) {
   body {
     padding-top: 111px;
@@ -2097,14 +2113,9 @@ textarea:focus::placeholder {
     transition: -webkit-transform 0.4s;
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
-    /*
-      закончив верстку шапки,
-      раскомментируем следующее свойство,
-      чтобы скрыть наше меню:*/
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
-    /* */
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -2161,6 +2172,14 @@ textarea:focus::placeholder {
   .page-header__right-block {
     width: auto;
     margin-left: auto;
+  }
+  .show-nav body {
+    overflow: hidden;
+  }
+  .show-nav .page-header__nav {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @media (max-width: 767px) {

@@ -5,12 +5,39 @@
 		@@include('blocks/page-header.html')
 		<main class="main">
 			<div class="home">
+				<header class="main-header home main-header">
+					<h1 class="main-header_title">Art space</h1>
+					<div class="main-header＿logo logo">
+						<div class="logo＿wrapper">
+							<svg class="logo icon" width="1928" height="325">
+								<use xlink:href="assets/icons/symbols.svg#logo_big"></use>
+							</svg>
+						</div>
+					</div>
+					<p class="main-header＿description">
+						for people with burning hearts and deeds
+						<br />
+						a place for the present
+					</p>
+				</header>
+
+				<!-- @@include('blocks/offers.html', { class: 'home__offers' }) -->
+
 				@@include('blocks/about.html', { class: 'home__about' })
+
+				<!-- @@include('blocks/upcoming.html', { class: 'home__upcoming' }) -->
+
 				@@include('blocks/blog-listing.html', {"class": "home__listing"})
+
+				<!-- @@include('blocks/contacts.html', {"class": "home__contacts"}) -->
+
+				<!-- @@include('blocks/doit.html', {"class": "home__doit"}) -->
 			</div>
 		</main>
 		<!-- prettier-ignore -->
 		@@include('blocks/page-footer.html') 
 		@@include('blocks/event-pp.html')
+
+		<script defer src="scripts/main.js"></script>
 	</body>
 </html>

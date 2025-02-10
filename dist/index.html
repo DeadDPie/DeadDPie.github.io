@@ -40,13 +40,31 @@
             <use xlink:href="assets/icons/symbols.svg#user"></use>
           </svg>
         </a>
-        <button type="button" class="page-header__nav-toggle"></button>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
       </div>
     </div>
   </header>
 
   <main class="main">
     <div class="home">
+      <header class="main-header home main-header">
+        <h1 class="main-header_title">Art space</h1>
+        <div class="main-header＿logo logo">
+          <div class="logo＿wrapper">
+            <svg class="logo icon" width="1928" height="325">
+              <use xlink:href="assets/icons/symbols.svg#logo_big"></use>
+            </svg>
+          </div>
+        </div>
+        <p class="main-header＿description">
+          for people with burning hearts and deeds
+          <br />
+          a place for the present
+        </p>
+      </header>
+
+
+
       <section class="about home__about">
         <div class="about__container">
           <h2 class="about__section-title section-title">О нас</h2>
@@ -96,6 +114,9 @@
           </div>
         </div>
       </section>
+
+
+
 
       <section class="listing home__listing">
         <h2 class="listing__title section-title">Блог</h2>
@@ -210,6 +231,10 @@
         </div>
         <a href="#" class="listing__link link">Смотреть все</a>
       </section>
+
+
+
+
 
     </div>
   </main>
@@ -340,6 +365,8 @@
     </div>
   </div>
 
+
+  <script defer src="scripts/main.js"></script>
 </body>
 
 </html>
