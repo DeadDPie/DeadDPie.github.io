@@ -2094,6 +2094,12 @@ textarea:focus::placeholder {
   opacity: 0;
   cursor: pointer;
 }
+.field label.error,
+.field span.error {
+  display: block;
+  margin: 5px 0 0;
+  color: #bc3324;
+}
 .form__list {
   display: -webkit-box;
   display: -ms-flexbox;
