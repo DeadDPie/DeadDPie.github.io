@@ -3637,7 +3637,7 @@ button.toast-close-button {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 64px;
-  padding: 120px 0 84px;
+  padding: 120px 100px 84px;
 }
 .upcoming__container {
   -webkit-box-sizing: border-box;
