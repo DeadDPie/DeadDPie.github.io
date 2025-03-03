@@ -2358,6 +2358,26 @@ button.toast-close-button {
 .form__close-btn:hover {
   color: #bd362f;
 }
+.doit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "mak", serif;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  white-space: nowrap;
+  pointer-events: none;
+  overflow: hidden;
+  font-size: 6vw;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.doit__text {
+  margin: 0 0 0 -2.5vw;
+}
+.doit__word1 {
+  text-align: left;
+}
 .event-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4385,6 +4405,9 @@ button.toast-close-button {
   .swiper--3s .swiper-slide:last-child {
     width: calc(33.3333% - 26.6666px);
   }
+  .doit {
+    font-size: 6.5vw;
+  }
   .event-card__title {
     margin: 0 0 10px;
   }
@@ -4505,6 +4528,24 @@ button.toast-close-button {
   }
 }
 @media (max-width: 1019px) {
+  .doit {
+    font-size: 8.5vw;
+  }
+  .doit__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .doit__text br {
+    display: none;
+  }
+  .doit__word2 {
+    margin-right: -10.6vw;
+  }
   .event-card__description {
     font-size: 14px;
     line-height: 19px;
@@ -4777,6 +4818,15 @@ button.toast-close-button {
   }
   .selectric-wrapper::before {
     right: 17px;
+  }
+  .doit {
+    font-size: 10.5vw;
+  }
+  .doit__word2 {
+    margin-right: -17.6vw;
+  }
+  .doit__word3 {
+    margin-left: -14vw;
   }
   .section-title {
     font-size: 16px;
