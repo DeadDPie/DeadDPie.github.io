@@ -2134,6 +2134,37 @@ button.toast-close-button {
   color: white;
   background-color: #a51505;
 }
+.link {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 0 15px 40px;
+  font-weight: 600;
+  line-height: 21.79px;
+  text-decoration: none;
+  color: #000000;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.link__blogs {
+  margin: 70px 0 0 auto;
+}
+.link__events {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link:hover {
+  color: #bd362f;
+}
 .arrow {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -2159,6 +2190,9 @@ button.toast-close-button {
 .arrow__icon {
   width: 100%;
   height: 100%;
+}
+.arrow__events-icon {
+  rotate: 90deg;
 }
 .field {
   display: -webkit-box;
@@ -2623,6 +2657,18 @@ button.toast-close-button {
 .listing__link:active {
   color: #bd362f;
 }
+.listing__link__events-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -30px -120px;
+}
+.listing__link__event-card {
+  width: calc(33.3333% - 60px);
+  margin: 0 30px 120px;
+}
 .reserve {
   display: grid;
   gap: 65px 11%;
@@ -2949,7 +2995,7 @@ button.toast-close-button {
           flex-direction: column;
   width: 100%;
   max-width: 1414px;
-  margin: 0 auto;
+  margin: 0 auto 150px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -2968,8 +3014,38 @@ button.toast-close-button {
 .events {
   padding: 140px 0 100px;
 }
-.events__listing {
+.events__table-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+.events__block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.events__offers {
   margin-bottom: 100px;
+}
+.events__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 65px;
+}
+.events__info .contacts-item {
+  width: calc(33.333% - 40px);
 }
 .event {
   padding: 40px 0 150px;
@@ -4015,6 +4091,16 @@ button.toast-close-button {
   border-right: none;
   padding-right: 0;
 }
+.table__title-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  max-width: 868px;
+  height: auto;
+  margin: 0;
+  padding-bottom: 60px;
+}
 .ok {
   display: block;
   position: relative;
@@ -4473,6 +4559,13 @@ button.toast-close-button {
   .event-card__title {
     margin: 0 0 10px;
   }
+  .listing__link__events-list {
+    margin: 0 -20px -100px;
+  }
+  .listing__link__event-card {
+    width: calc(33.3333% - 40px);
+    margin: 0 20px 100px;
+  }
   .section-title {
     max-width: 604px;
   }
@@ -4533,6 +4626,13 @@ button.toast-close-button {
     font-size: 20px;
     line-height: 27px;
   }
+  .listing__link__events-list {
+    margin: 0 -15px -100px;
+  }
+  .listing__link__event-card {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px 100px;
+  }
   .reserve {
     gap: 65px 6.5%;
     grid-template-columns: 340px calc(93.5% - 340px);
@@ -4552,6 +4652,14 @@ button.toast-close-button {
   .listing__event-card {
     width: calc(33.3333% - 30px);
     margin: 0 15px 100px;
+  }
+  .events__table-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .events__block {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .event__container {
     padding-left: 30px;
@@ -4590,6 +4698,10 @@ button.toast-close-button {
   }
 }
 @media (max-width: 1019px) {
+  .arrow__events-icon {
+    width: 67px;
+    height: 40px;
+  }
   .doit {
     font-size: 8.5vw;
   }
@@ -4612,6 +4724,17 @@ button.toast-close-button {
     font-size: 14px;
     line-height: 19px;
   }
+  .listing__link__events-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -15px -80px;
+  }
+  .listing__link__event-card {
+    width: calc(50% - 30px);
+    max-width: 405px;
+    margin: 0 15px 80px;
+  }
   .reserve {
     gap: 60px;
     grid-template-columns: auto 390px;
@@ -4627,6 +4750,21 @@ button.toast-close-button {
     width: calc(50% - 30px);
     max-width: 405px;
     margin: 0 15px 80px;
+  }
+  .events {
+    padding-top: 90px;
+  }
+  .events__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
+  .events__info .contacts-item {
+    max-width: 280px;
+    width: calc(50% - 50px);
   }
   .page-header__nav {
     position: absolute;
@@ -4787,10 +4925,19 @@ button.toast-close-button {
   .swiper-footer {
     margin: 60px auto 0;
   }
+  .link__events {
+    font-size: 14px;
+  }
   .event-card__title {
     min-height: 44px;
     font-size: 16px;
     line-height: 22px;
+  }
+  .listing__link__events-list {
+    margin: 0 -10px -80px;
+  }
+  .listing__link__event-card {
+    margin: 0 10px 80px;
   }
   .reserve {
     grid-template-columns: 100%;
@@ -4807,6 +4954,14 @@ button.toast-close-button {
   }
   .listing__event-card {
     margin: 0 10px 80px;
+  }
+  .events__table-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .events__block {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .event__container {
     padding-left: 20px;
@@ -4911,6 +5066,13 @@ button.toast-close-button {
   }
 }
 @media (max-width: 649px) {
+  .listing__link__events-list {
+    margin: 0 0 -60px;
+  }
+  .listing__link__event-card {
+    width: 100%;
+    margin: 0 0 60px;
+  }
   .listing__events-list {
     margin: 0 0 -60px;
   }
@@ -4931,6 +5093,9 @@ button.toast-close-button {
   .selectric-wrapper::before {
     right: 17px;
   }
+  .link__blogs {
+    margin-top: 45px;
+  }
   .doit {
     font-size: 10.5vw;
   }
@@ -4942,6 +5107,12 @@ button.toast-close-button {
   }
   .section-title {
     font-size: 16px;
+  }
+  .events {
+    padding-top: 80px;
+  }
+  .events__info .contacts-item {
+    width: 100%;
   }
   .main-header__title {
     font-size: 13px;
