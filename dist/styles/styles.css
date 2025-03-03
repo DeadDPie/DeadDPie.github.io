@@ -3616,6 +3616,68 @@ button.toast-close-button {
   width: 100%;
   height: 490px;
 }
+.contacts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 54px;
+}
+.contacts-item--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.contacts-item--column .contacts-item__title,
+.contacts-item--column .contacts-item__text {
+  text-align: center;
+}
+.contacts-item__wrap-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  height: 110px;
+  background-color: #000000;
+  color: #bd362f;
+}
+.contacts-item__icon {
+  margin: auto;
+}
+.contacts-item__info {
+  justify-items: flex-start;
+}
+.contacts-item__title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  width: 100%;
+}
+.contacts-item__text {
+  margin: 0 0 5px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.contacts-item__text[href] {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.contacts-item__text[href]:active {
+  color: #bd362f;
+}
+.contacts-item__text:last-child {
+  margin-bottom: 0;
+}
 .pp {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4679,6 +4741,28 @@ button.toast-close-button {
   .contacts__map {
     height: 465px;
   }
+  .contacts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-item__title {
+    font-size: 18px;
+  }
+  .contacts-item__text {
+    text-align: center;
+  }
+  .contacts-item__text[href] {
+    text-align: center;
+  }
   .show-nav body {
     overflow: hidden;
   }
@@ -4788,6 +4872,34 @@ button.toast-close-button {
             flex-direction: column;
     gap: 40px;
     margin-right: auto;
+  }
+  .contacts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contacts-item--column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-item__wrap-icon {
+    width: 65px;
+    height: 65px;
+  }
+  .contacts-item__title {
+    font-size: 14px;
+  }
+  .contacts-item__text {
+    margin-bottom: 0;
   }
   .x-btn {
     width: 36px;
@@ -4958,6 +5070,9 @@ button.toast-close-button {
   .page-footer__networks-conf:hover,
   .page-footer__networks-cookies:hover,
   .page-footer__networks-other:hover {
+    color: #bd362f;
+  }
+  .contacts-item__text[href]:hover {
     color: #bd362f;
   }
 }
